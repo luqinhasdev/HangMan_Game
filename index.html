@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JOGO DA FORCA</title>
-    <link rel="stylesheet" href="JogoForca.css">
-    <script src="JogoForca.js"> </script>
+    <link rel="stylesheet" href="style.css">
+    <script src="HangMan_Game.js"></script>
 </head>
 <body>
     <h1 id="Title">DESCUBRA A PALAVRA SECRETA! </h1>
     <div class="container">
         <div class="texts">
             <h3>DIGITE A PALAVRA SECRETA</h3>
-            <input id="secrets" type="password" onkeyup="">
-            <button id="buttonstart" disabled onclick="">INICIAR O JOGO</button>
+            <input id="secret" type="password" onkeyup="enableStartButton()">
+            <button id="buttonStart" disabled onclick="startGame()">INICIAR O JOGO</button>
             <h3>DIGITE UMA LETRA:</h3>
             <input type="text" id="try" disabled maxlength="1">
             <button id="checkbutton" disabled onclick="">CONFIRMAR LETRA</button>
@@ -23,8 +23,7 @@
             <button id="restart" hidden onclick="">REINICIAR JOGO</button>
         </div>
         <div class="draw">
-            <img src="JogoForca/1.png" alt="">
-
+            <img src="HangMan_Game/1.png" alt="">
         </div>
     </div>
 </body>
